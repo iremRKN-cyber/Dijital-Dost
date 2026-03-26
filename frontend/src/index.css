@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    @apply bg-sky-50 text-slate-800;
+  }
+
+  /* Yaşlı dostu odak halkası */
+  :focus-visible {
+    @apply outline-none ring-2 ring-sky-500 ring-offset-2;
+  }
+}
+
