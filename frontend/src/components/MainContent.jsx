@@ -34,6 +34,9 @@ export default function MainContent() {
 
   const ERROR_MESSAGE = 'Üzgünüm, şu an analiz yapamıyorum. Lütfen internet bağlantını kontrol et.'
 
+  // GÜVENLİK GÜNCELLEMESİ: API Anahtarını Netlify'ın güvenli kasasından çekiyoruz
+  const getGenAI = () => new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+
   useEffect(() => {
     if (!imagePreviewUrl) return
     return () => URL.revokeObjectURL(imagePreviewUrl)
@@ -42,8 +45,7 @@ export default function MainContent() {
   // --- YAPAY ZEKA İLE SONSUZ İÇERİK ÜRETİCİSİ ---
   async function fetchDynamicEduContent(type) {
     setIsEduLoading(true)
-    const apiKey = "AIzaSyDHExTFLA67DulkhJ_CGu3KdbZhLRe8Aew"
-    const genAI = new GoogleGenerativeAI(apiKey)
+    const genAI = getGenAI()
     const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
 
     try {
@@ -63,7 +65,6 @@ export default function MainContent() {
         setCurrentLaws(JSON.parse(jsonStr))
       }
     } catch (e) {
-      // YZ hatası (429 vb.) olursa sayfayı çökertme, sabit havuzu göster
       console.warn("YZ içeriği üretemedi, B planına geçildi.")
       if (type === 'scenarios') setCurrentScenarios(FALLBACK_SCENARIOS)
       else setCurrentLaws(FALLBACK_LAWS)
@@ -72,14 +73,13 @@ export default function MainContent() {
     }
   }
 
-  // Eğitim modülüne ilk girildiğinde YZ'den veri çek
   useEffect(() => {
     if (mode === 'education') {
       setEduTab('scenarios')
       setQuizData(null)
       setSelectedAnswer(null)
-      fetchDynamicEduContent('scenarios') // İlk sekme için senaryoları çek
-      fetchDynamicEduContent('laws')      // İkinci sekme için yasaları arka planda çek
+      fetchDynamicEduContent('scenarios')
+      fetchDynamicEduContent('laws')
     }
   }, [mode])
 
@@ -114,8 +114,7 @@ export default function MainContent() {
   }
 
   async function analyzeWithGemini() {
-    const apiKey = "AIzaSyDHExTFLA67DulkhJ_CGu3KdbZhLRe8Aew"
-    const genAI = new GoogleGenerativeAI(apiKey)
+    const genAI = getGenAI()
     const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
 
     const elderlyPrompt = "Sen yaşlılar için şefkatli bir asistanısın. 'mesaj' kısmında SADECE 2-3 cümlelik çok sade bir özet yaz. 'nedenler' listesi BOŞ olsun."
@@ -139,8 +138,7 @@ export default function MainContent() {
 
   async function generateQuiz() {
     setIsLoading(true); setQuizData(null); setSelectedAnswer(null)
-    const apiKey = "AIzaSyDHExTFLA67DulkhJ_CGu3KdbZhLRe8Aew"
-    const genAI = new GoogleGenerativeAI(apiKey)
+    const genAI = getGenAI()
     const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
 
     const prompt = `Çok güncel bir siber dolandırıcılık senaryosu ve çoktan seçmeli bir soru hazırla.
