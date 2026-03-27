@@ -35,7 +35,8 @@ export default function MainContent() {
   const ERROR_MESSAGE = 'Üzgünüm, şu an analiz yapamıyorum. Lütfen internet bağlantını kontrol et.'
 
   // GÜVENLİK GÜNCELLEMESİ: API Anahtarını Netlify'ın güvenli kasasından çekiyoruz
-  const getGenAI = () => new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+  // TEST İÇİN GEÇİCİ OLARAK AÇIK YAZIYORUZ
+  const getGenAI = () => new GoogleGenerativeAI("AIzaSyDHExTFLA67DulkhJ_CGu3KdbZhLRe8Aew");
 
   useEffect(() => {
     if (!imagePreviewUrl) return
