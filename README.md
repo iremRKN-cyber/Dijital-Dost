@@ -22,4 +22,4 @@ Projeyi kendi bilgisayarınızda çalıştırmak için:
 
 1. Repoyu klonlayın:
    ```bash
-   git clone [https://github.com/KULLANICI_ADIN/dijital-dost.git](https://github.com/iremRKN-cyber/dijital-dost.git)
+(https://github.com/iremRKN-cyber/dijital-dost.git)
