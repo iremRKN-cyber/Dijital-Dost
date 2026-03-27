@@ -1,23 +1,22 @@
-# 🛡️ Dijital Dost: Yapay Zeka Destekli Siber Kalkan
+# Dijital Dost
 
-Dijital Dost; internetteki dolandırıcılık, oltalama ve siber zorbalık vakalarına karşı yaşlıları ve çocukları korumak amacıyla geliştirilmiş, **Google Gemini 2.5 Flash** destekli akıllı bir analiz ve eğitim platformudur.
+## Problem
+Günümüzde siber dolandırıcılık, oltalama (phishing) saldırıları ve siber zorbalık vakaları hızla artmaktadır. Karmaşık siber güvenlik araçları, internet okuryazarlığı düşük olan yaşlı bireyler ve dijital tehlikelere karşı savunmasız olan çocuklar için anlaşılamaz durumdadır. Bu iki riskli grubun anlık olarak kullanabileceği, basit, anlaşılır ve şefkatli bir dijital koruma kalkanına acil ihtiyaç vardır.
 
-![Dijital Dost Banner](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Gemini AI](https://img.shields.io/badge/Gemini_2.5_Flash-8E75B2?style=for-the-badge&logo=googlebard&logoColor=white)
+## Çözüm
+Dijital Dost, şüpheli mesajları, linkleri ve ekran görüntülerini anında analiz eden bir siber güvenlik asistanıdır. Projenin merkezindeki Google Gemini 2.5 Flash yapay zekası, karmaşık siber tehditleri (metin ve OCR ile görsel olarak) saniyeler içinde algılar. AI, kullanıcının profiline (büyükler veya çocuklar) göre persona değiştirerek özel, anlaşılır ve korumacı bir dille uyarılar üretir. Ayrıca YZ destekli eğitim modülüyle dinamik senaryolar yaratarak kullanıcıların siber farkındalığını interaktif bir şekilde artırır.
 
-## 🔗 Canlı Demo & Video
-* **🌍 Canlı Siteyi İnceleyin:** [BURAYA VERCEL LİNKİNİ YAPIŞTIR (Örn: https://dijital-dost.vercel.app)]
-* **🎥 Proje Sunumu & Çalışma Mantığı (Loom):** [SABAH ÇEKECEĞİN LOOM LİNKİNİ BURAYA YAPIŞTIR]
+## Canlı Demo
+Yayın Linki: https://dijital-dost.vercel.app
+Demo Video: [SABAH ÇEKECEĞİN LOOM VİDEO LİNKİNİ BURAYA YAPIŞTIR]
 
-## ✨ Temel Özellikler
-1. **👵 Büyükler İçin Koruma:** Şüpheli SMS veya WhatsApp mesajlarının ekran görüntülerini analiz eder, anlaşılır bir dille uyarır.
-2. **🛡️ Çocuklar İçin Kalkan:** Oyun içi dolandırıcılıkları veya zorbalıkları tespit eder, kritik anlarda "Aileme Haber Ver" butonunu aktif eder.
-3. **📚 Eğitim ve Simülasyon:** Gemini AI ile her tıklamada eşsiz dolandırıcılık senaryoları ve quizler üreterek kullanıcıları eğitir.
-4. **📡 Canlı Tehdit Radarı:** Güncel siber saldırı trendlerini ekranda anlık olarak döndürür.
-5. **🛡️ Fallback Mimarisi (Kriz Yönetimi):** API kotası dolsa bile sistemin çökmesini engelleyen ve yedek senaryoları devreye sokan güvenli Blue Team mimarisi.
+## Kullanılan Teknolojiler
+- React.js & Vite
+- Tailwind CSS
+- Google Gemini 2.5 Flash API
+- Vercel (Deployment)
 
-## 🚀 Kurulum (Local Development)
+## Nasıl Çalıştırılır?
 Projeyi kendi bilgisayarınızda çalıştırmak için:
 
 1. Repoyu klonlayın:
