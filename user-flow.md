@@ -1,4 +1,4 @@
-# 🔄 Kullanıcı Akışı (User Flow)
+# Kullanıcı Akışı (User Flow)
 
 1. **Karşılama Ekranı:** Kullanıcı siteye girer ve 3 ana moddan birini seçer (Büyükler, Çocuklar, Eğitim).
 2. **Analiz Modu (Büyükler / Çocuklar):**
