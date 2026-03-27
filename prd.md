@@ -1,4 +1,4 @@
-# 📋 Ürün Gereksinim Belgesi (PRD)
+# Ürün Gereksinim Belgesi (PRD)
 
 ## 1. Hedef Kitle
 * İnternet okuryazarlığı düşük yaşlı bireyler.
