@@ -1,43 +1,24 @@
-# 🛡️ Dijital Dost | Siber Güvenlik Kalkanı
+# Dijital Dost
 
-**Dijital Dost**, internetin karmaşık ve bazen tehlikeli dünyasında dezavantajlı gruplara (çocuklar ve yaşlılar) rehberlik etmek için geliştirilmiş yapay zeka destekli bir siber güvenlik asistanıdır. 
+## Problem
+Günümüzde siber dolandırıcılık, oltalama (phishing) saldırıları ve siber zorbalık vakaları hızla artmaktadır. Karmaşık siber güvenlik araçları, internet okuryazarlığı düşük olan yaşlı bireyler ve dijital tehlikelere karşı savunmasız olan çocuklar için anlaşılamaz durumdadır. Bu iki riskli grubun anlık olarak kullanabileceği, basit, anlaşılır ve şefkatli bir dijital koruma kalkanına acil ihtiyaç vardır.
 
-Bu proje, **UP School AI Buildathon** kapsamında, teknolojiye aşina olmayan kullanıcıları oltalama (phishing) saldırılarından, dolandırıcılıklardan ve siber zorbalıktan korumak amacıyla tasarlanmıştır.
+## Çözüm
+Dijital Dost, şüpheli mesajları, linkleri ve ekran görüntülerini anında analiz eden bir siber güvenlik asistanıdır. Projenin merkezindeki Google Gemini 2.5 Flash yapay zekası, karmaşık siber tehditleri (metin ve OCR ile görsel olarak) saniyeler içinde algılar. AI, kullanıcının profiline (büyükler veya çocuklar) göre persona değiştirerek özel, anlaşılır ve korumacı bir dille uyarılar üretir. Ayrıca YZ destekli eğitim modülüyle dinamik senaryolar yaratarak kullanıcıların siber farkındalığını interaktif bir şekilde artırır.
 
-## 🎯 Çözülen Problem
-Günümüzde siber saldırılar giderek daha karmaşık hale geliyor. Özellikle internet okuryazarlığı düşük olan yaşlı bireyler dolandırıcılık SMS'lerinin (sahte kargo, aidat iadesi vb.), çocuklar ise oyun içi siber zorbalık ve hırsızlıkların bir numaralı hedefi konumunda. "Dijital Dost", bu iki farklı grubun ihtiyaçlarına özel, şefkatli ve koruyucu bir yapay zeka kalkanı sunar.
+## Canlı Demo
+Yayın Linki: https://dijital-dost.vercel.app
+Demo Video: [SABAH ÇEKECEĞİN LOOM VİDEO LİNKİNİ BURAYA YAPIŞTIR]
 
-## ✨ Temel Özellikler
+## Kullanılan Teknolojiler
+- React.js & Vite
+- Tailwind CSS
+- Google Gemini 2.5 Flash API
+- Vercel (Deployment)
 
-👵 **Büyükler İçin Şefkatli Mod:**
-* Şüpheli SMS veya linkleri teknik jargon kullanmadan, sade ve güven veren bir dille analiz eder.
-* Kafa karıştırıcı detaylardan kaçınarak net bir "Güvenli / Şüpheli / Tehlikeli" kararı verir.
+## Nasıl Çalıştırılır?
+Projeyi kendi bilgisayarınızda çalıştırmak için:
 
-🛡️ **Çocuklar İçin Koruyucu & Eğitici Mod:**
-* Oyun sohbetlerindeki zorbalıkları veya hediye vaadiyle şifre çalmaya çalışanları tespit eder.
-* **Acil Durum Protokolü:** Eğer içerik çocuk için "Tehlikeli" bulunursa, tek tıkla WhatsApp üzerinden aileye otomatik acil durum mesajı gönderir.
-* **"Nedenini Öğrenelim":** Çocuğu sadece engellemekle kalmaz, tehdidin neden tehlikeli olduğunu maddeler halinde açıklar.
-
-🧠 **Dinamik Eğitim & Simülasyon Modülü (Yapay Zeka Destekli):**
-* Sabit bir veri tabanı kullanmaz. Gemini AI altyapısı ile internetteki en güncel dolandırıcılık senaryolarını canlı olarak üretir.
-* Siber güvenlik hakları ve yasaları hakkında dinamik bir bilgi bankası sunar.
-* Kullanıcının siber farkındalığını ölçmek için yapay zeka destekli otonom çoktan seçmeli "Canlı Testler" oluşturur.
-
-🔊 **Gelişmiş Erişilebilirlik (A11y):**
-* **Sesle Yazma:** Klavye kullanamayanlar için Speech-to-Text (STT) entegrasyonu.
-* **Sesli Okuma:** Görme zorluğu çekenler için yapay zekanın analizini sesli okuyan Text-to-Speech (TTS) altyapısı.
-* **Görsel Analizi (OCR/Vision):** Şüpheli ekran görüntülerini veya fotoğrafları anında analiz edebilme yeteneği.
-
-## 💻 Kullanılan Teknolojiler
-* **Frontend:** React, Vite, Tailwind CSS
-* **Yapay Zeka:** Google Gemini 2.5 Flash API (Text & Multimodal Vision)
-* **Web API'leri:** Web Speech API (Sesli komut ve okuma)
-* **Entegrasyonlar:** WhatsApp URL Scheme
-
-## 🚀 Kurulum ve Çalıştırma
-
-Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
-
-1. Projeyi klonlayın:
-   ```bash
-   git clone [https://github.com/kullaniciadiniz/dijital-dost.git](https://github.com/kullaniciadiniz/dijital-dost.git)
+1. Repoyu klonlayın:
+```bash
+git clone [https://github.com/iremRKN-cyber/Dijital-Dost.git](https://github.com/iremRKN-cyber/Dijital-Dost.git)
