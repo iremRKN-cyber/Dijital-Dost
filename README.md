@@ -1,43 +1,25 @@
-# 🛡️ Dijital Dost | Siber Güvenlik Kalkanı
+# 🛡️ Dijital Dost: Yapay Zeka Destekli Siber Kalkan
 
-**Dijital Dost**, internetin karmaşık ve bazen tehlikeli dünyasında dezavantajlı gruplara (çocuklar ve yaşlılar) rehberlik etmek için geliştirilmiş yapay zeka destekli bir siber güvenlik asistanıdır. 
+Dijital Dost; internetteki dolandırıcılık, oltalama ve siber zorbalık vakalarına karşı yaşlıları ve çocukları korumak amacıyla geliştirilmiş, **Google Gemini 2.5 Flash** destekli akıllı bir analiz ve eğitim platformudur.
 
-Bu proje, **UP School AI Buildathon** kapsamında, teknolojiye aşina olmayan kullanıcıları oltalama (phishing) saldırılarından, dolandırıcılıklardan ve siber zorbalıktan korumak amacıyla tasarlanmıştır.
+![Dijital Dost Banner](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Gemini AI](https://img.shields.io/badge/Gemini_2.5_Flash-8E75B2?style=for-the-badge&logo=googlebard&logoColor=white)
 
-## 🎯 Çözülen Problem
-Günümüzde siber saldırılar giderek daha karmaşık hale geliyor. Özellikle internet okuryazarlığı düşük olan yaşlı bireyler dolandırıcılık SMS'lerinin (sahte kargo, aidat iadesi vb.), çocuklar ise oyun içi siber zorbalık ve hırsızlıkların bir numaralı hedefi konumunda. "Dijital Dost", bu iki farklı grubun ihtiyaçlarına özel, şefkatli ve koruyucu bir yapay zeka kalkanı sunar.
+## 🔗 Canlı Demo & Video
+* **🌍 Canlı Siteyi İnceleyin:** [BURAYA VERCEL LİNKİNİ YAPIŞTIR (Örn: https://dijital-dost.vercel.app)]
+* **🎥 Proje Sunumu & Çalışma Mantığı (Loom):** [SABAH ÇEKECEĞİN LOOM LİNKİNİ BURAYA YAPIŞTIR]
 
 ## ✨ Temel Özellikler
+1. **👵 Büyükler İçin Koruma:** Şüpheli SMS veya WhatsApp mesajlarının ekran görüntülerini analiz eder, anlaşılır bir dille uyarır.
+2. **🛡️ Çocuklar İçin Kalkan:** Oyun içi dolandırıcılıkları veya zorbalıkları tespit eder, kritik anlarda "Aileme Haber Ver" butonunu aktif eder.
+3. **📚 Eğitim ve Simülasyon:** Gemini AI ile her tıklamada eşsiz dolandırıcılık senaryoları ve quizler üreterek kullanıcıları eğitir.
+4. **📡 Canlı Tehdit Radarı:** Güncel siber saldırı trendlerini ekranda anlık olarak döndürür.
+5. **🛡️ Fallback Mimarisi (Kriz Yönetimi):** API kotası dolsa bile sistemin çökmesini engelleyen ve yedek senaryoları devreye sokan güvenli Blue Team mimarisi.
 
-👵 **Büyükler İçin Şefkatli Mod:**
-* Şüpheli SMS veya linkleri teknik jargon kullanmadan, sade ve güven veren bir dille analiz eder.
-* Kafa karıştırıcı detaylardan kaçınarak net bir "Güvenli / Şüpheli / Tehlikeli" kararı verir.
+## 🚀 Kurulum (Local Development)
+Projeyi kendi bilgisayarınızda çalıştırmak için:
 
-🛡️ **Çocuklar İçin Koruyucu & Eğitici Mod:**
-* Oyun sohbetlerindeki zorbalıkları veya hediye vaadiyle şifre çalmaya çalışanları tespit eder.
-* **Acil Durum Protokolü:** Eğer içerik çocuk için "Tehlikeli" bulunursa, tek tıkla WhatsApp üzerinden aileye otomatik acil durum mesajı gönderir.
-* **"Nedenini Öğrenelim":** Çocuğu sadece engellemekle kalmaz, tehdidin neden tehlikeli olduğunu maddeler halinde açıklar.
-
-🧠 **Dinamik Eğitim & Simülasyon Modülü (Yapay Zeka Destekli):**
-* Sabit bir veri tabanı kullanmaz. Gemini AI altyapısı ile internetteki en güncel dolandırıcılık senaryolarını canlı olarak üretir.
-* Siber güvenlik hakları ve yasaları hakkında dinamik bir bilgi bankası sunar.
-* Kullanıcının siber farkındalığını ölçmek için yapay zeka destekli otonom çoktan seçmeli "Canlı Testler" oluşturur.
-
-🔊 **Gelişmiş Erişilebilirlik (A11y):**
-* **Sesle Yazma:** Klavye kullanamayanlar için Speech-to-Text (STT) entegrasyonu.
-* **Sesli Okuma:** Görme zorluğu çekenler için yapay zekanın analizini sesli okuyan Text-to-Speech (TTS) altyapısı.
-* **Görsel Analizi (OCR/Vision):** Şüpheli ekran görüntülerini veya fotoğrafları anında analiz edebilme yeteneği.
-
-## 💻 Kullanılan Teknolojiler
-* **Frontend:** React, Vite, Tailwind CSS
-* **Yapay Zeka:** Google Gemini 2.5 Flash API (Text & Multimodal Vision)
-* **Web API'leri:** Web Speech API (Sesli komut ve okuma)
-* **Entegrasyonlar:** WhatsApp URL Scheme
-
-## 🚀 Kurulum ve Çalıştırma
-
-Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
-
-1. Projeyi klonlayın:
+1. Repoyu klonlayın:
    ```bash
-   git clone [https://github.com/kullaniciadiniz/dijital-dost.git](https://github.com/kullaniciadiniz/dijital-dost.git)
+   git clone [https://github.com/KULLANICI_ADIN/dijital-dost.git](https://github.com/iremRKN-cyber/dijital-dost.git)
