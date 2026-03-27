@@ -34,9 +34,8 @@ export default function MainContent() {
 
   const ERROR_MESSAGE = 'Üzgünüm, şu an analiz yapamıyorum. Lütfen internet bağlantını kontrol et.'
 
-  // GÜVENLİK GÜNCELLEMESİ: API Anahtarını Netlify'ın güvenli kasasından çekiyoruz
-  // TEST İÇİN GEÇİCİ OLARAK AÇIK YAZIYORUZ
-  const getGenAI = () => new GoogleGenerativeAI("AIzaSyDHExTFLA67DulkhJ_CGu3KdbZhLRe8Aew");
+  // GÜVENLİK: API Anahtarını sadece Netlify kasasından çekiyoruz (Açık şifre yok!)
+  const getGenAI = () => new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 
   useEffect(() => {
     if (!imagePreviewUrl) return
@@ -46,10 +45,10 @@ export default function MainContent() {
   // --- YAPAY ZEKA İLE SONSUZ İÇERİK ÜRETİCİSİ ---
   async function fetchDynamicEduContent(type) {
     setIsEduLoading(true)
-    const genAI = getGenAI()
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
-
     try {
+      const genAI = getGenAI()
+      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
+
       if (type === 'scenarios') {
         const prompt = `Şu an internette sıkça rastlanan, BİRBİRİNDEN ÇOK FARKLI 2 güncel siber dolandırıcılık veya zorbalık senaryosu (örn: yapay zeka ses taklidi, sahte kargo vb.) üret. SADECE JSON dizisi dön:
         [{"id": 1, "icon": "🚨", "title": "Başlık", "desc": "Olayın açıklaması", "action": "Ne yapılmalı?", "bg": "bg-red-50", "border": "border-red-500", "titleColor": "text-red-900", "actionColor": "text-red-700"}]`
@@ -66,7 +65,7 @@ export default function MainContent() {
         setCurrentLaws(JSON.parse(jsonStr))
       }
     } catch (e) {
-      console.warn("YZ içeriği üretemedi, B planına geçildi.")
+      console.warn("YZ içeriği üretemedi, B planına geçildi.", e)
       if (type === 'scenarios') setCurrentScenarios(FALLBACK_SCENARIOS)
       else setCurrentLaws(FALLBACK_LAWS)
     } finally {
@@ -74,6 +73,7 @@ export default function MainContent() {
     }
   }
 
+  // Eğitim modülüne ilk girildiğinde YZ'den veri çek
   useEffect(() => {
     if (mode === 'education') {
       setEduTab('scenarios')
@@ -115,17 +115,17 @@ export default function MainContent() {
   }
 
   async function analyzeWithGemini() {
-    const genAI = getGenAI()
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
-
-    const elderlyPrompt = "Sen yaşlılar için şefkatli bir asistanısın. 'mesaj' kısmında SADECE 2-3 cümlelik çok sade bir özet yaz. 'nedenler' listesi BOŞ olsun."
-    const childPrompt = "Sen çocuklar için siber güvenlik ablasısın. 'mesaj' kısmında kısa bir uyarı geç. 'nedenler' kısmında 2 teknik madde yaz."
-
-    const prompt = `${mode === 'child' ? childPrompt : elderlyPrompt}
-    Format (JSON): {"durum": "guvenli" | "supheli" | "tehlikeli", "mesaj": "Anlatım", "nedenler": []}
-    İçerik: ${text.trim() || 'Görsel yüklendi.'}`
-
     try {
+      const genAI = getGenAI()
+      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
+
+      const elderlyPrompt = "Sen yaşlılar için şefkatli bir asistanısın. 'mesaj' kısmında SADECE 2-3 cümlelik çok sade bir özet yaz. 'nedenler' listesi BOŞ olsun."
+      const childPrompt = "Sen çocuklar için siber güvenlik ablasısın. 'mesaj' kısmında kısa bir uyarı geç. 'nedenler' kısmında 2 teknik madde yaz."
+
+      const prompt = `${mode === 'child' ? childPrompt : elderlyPrompt}
+      Format (JSON): {"durum": "guvenli" | "supheli" | "tehlikeli", "mesaj": "Anlatım", "nedenler": []}
+      İçerik: ${text.trim() || 'Görsel yüklendi.'}`
+
       const parts = [prompt]
       if (imageFile) parts.push(await fileToGenerativePart(imageFile))
       const result = await model.generateContent(parts)
@@ -133,19 +133,20 @@ export default function MainContent() {
       const jsonStr = raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1)
       return JSON.parse(jsonStr)
     } catch (err) {
+      console.error("Gemini Hatası:", err)
       throw new Error("Sistem şu an meşgul, lütfen birazdan tekrar deneyin.")
     }
   }
 
   async function generateQuiz() {
     setIsLoading(true); setQuizData(null); setSelectedAnswer(null)
-    const genAI = getGenAI()
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
-
-    const prompt = `Çok güncel bir siber dolandırıcılık senaryosu ve çoktan seçmeli bir soru hazırla.
-    Format JSON: {"senaryo": "...", "soru": "...", "secenekler": [{"id": "A", "metin": "..."}], "dogruCevapId": "A", "aciklama": "..."}`
-
     try {
+      const genAI = getGenAI()
+      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
+
+      const prompt = `Çok güncel bir siber dolandırıcılık senaryosu ve çoktan seçmeli bir soru hazırla.
+      Format JSON: {"senaryo": "...", "soru": "...", "secenekler": [{"id": "A", "metin": "..."}], "dogruCevapId": "A", "aciklama": "..."}`
+
       const result = await model.generateContent(prompt)
       const raw = result.response.text()
       setQuizData(JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1)))
