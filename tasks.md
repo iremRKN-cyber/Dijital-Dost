@@ -1,4 +1,4 @@
-# 📝 Görev Listesi (Tasks)
+# Görev Listesi (Tasks)
 
 - [x] Proje fikrinin ve hedef kitlenin belirlenmesi
 - [x] UI/UX tasarımlarının modern ve erişilebilir şekilde kodlanması
