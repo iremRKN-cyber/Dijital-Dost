@@ -21,5 +21,4 @@ Dijital Dost; internetteki dolandırıcılık, oltalama ve siber zorbalık vakal
 Projeyi kendi bilgisayarınızda çalıştırmak için:
 
 1. Repoyu klonlayın:
-   ```bash
-(https://github.com/iremRKN-cyber/dijital-dost.git)
+   ```bash (https://github.com/iremRKN-cyber/dijital-dost.git)
