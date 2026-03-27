@@ -47,7 +47,7 @@ export default function MainContent() {
     setIsEduLoading(true)
     try {
       const genAI = getGenAI()
-      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
+      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
 
       if (type === 'scenarios') {
         const prompt = `Şu an internette sıkça rastlanan, BİRBİRİNDEN ÇOK FARKLI 2 güncel siber dolandırıcılık veya zorbalık senaryosu (örn: yapay zeka ses taklidi, sahte kargo vb.) üret. SADECE JSON dizisi dön:
@@ -117,7 +117,7 @@ export default function MainContent() {
   async function analyzeWithGemini() {
     try {
       const genAI = getGenAI()
-      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
+      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
 
       const elderlyPrompt = "Sen yaşlılar için şefkatli bir asistanısın. 'mesaj' kısmında SADECE 2-3 cümlelik çok sade bir özet yaz. 'nedenler' listesi BOŞ olsun."
       const childPrompt = "Sen çocuklar için siber güvenlik ablasısın. 'mesaj' kısmında kısa bir uyarı geç. 'nedenler' kısmında 2 teknik madde yaz."
@@ -142,7 +142,7 @@ export default function MainContent() {
     setIsLoading(true); setQuizData(null); setSelectedAnswer(null)
     try {
       const genAI = getGenAI()
-      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
+      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
 
       const prompt = `Çok güncel bir siber dolandırıcılık senaryosu ve çoktan seçmeli bir soru hazırla.
       Format JSON: {"senaryo": "...", "soru": "...", "secenekler": [{"id": "A", "metin": "..."}], "dogruCevapId": "A", "aciklama": "..."}`
