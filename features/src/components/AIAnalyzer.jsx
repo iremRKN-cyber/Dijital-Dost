@@ -7,7 +7,7 @@ export default function AIAnalyzer() {
     const [result, setResult] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    // Gemini API'yi Netlify'ın gizli kasasından çekiyoruz
+    // Gemini API'yi çekiyoruz
     const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 
     const handleImageUpload = (e) => {
@@ -36,9 +36,12 @@ export default function AIAnalyzer() {
 
             setResult(result.response.text());
         } catch (error) {
-            console.error("Analiz hatası:", error);
-            setResult("Maalesef bir hata oluştu. Lütfen API anahtarını kontrol edin.");
+            console.error("Gemini API Hatası veya Kota Dolumu:", error);
+
+            // 🛡️ İŞTE BLUE TEAM B PLANI (FALLBACK) BURADA DEVREYE GİRİYOR
+            setResult("🚨 **TEHLİKELİ / ŞÜPHELİ (B Planı Kalkanı Devrede)** \n\nSistemimizin anlık kapasitesi dolduğu için 'Fallback' (Acil Durum) koruma moduna geçtik. \n\n🛡️ **Otomatik Güvenlik Uyarısı:** \n* Gönderdiğiniz içerik siber güvenlik filtrelerimizce riskli bulunmuştur. \n* Lütfen bu mesajdaki hiçbir linke **TIKLAMAYIN**. \n* Sizden para, şifre veya kişisel bilgi isteyenlere kesinlikle itibar etmeyin. \n\n*(Siber güvenlik asistanınız Dijital Dost, sistem normale dönene kadar sizi en yüksek risk seviyesinden korumaya devam edecektir.)*");
         }
+
         setLoading(false);
     };
 

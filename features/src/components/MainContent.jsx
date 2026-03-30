@@ -51,7 +51,7 @@ export default function MainContent() {
   const [isEduLoading, setIsEduLoading] = useState(false)
 
   const ERROR_MESSAGE = 'Üzgünüm, şu an analiz yapamıyorum. Lütfen internet bağlantını kontrol et.'
-  const getGenAI = () => new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+  const getGenAI = () => new (import.meta.env.VITE_GEMINI_API_KEY);
 
   useEffect(() => {
     if (!imagePreviewUrl) return
