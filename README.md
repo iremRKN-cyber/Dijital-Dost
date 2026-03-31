@@ -10,6 +10,7 @@ Yapay zeka sadece metinleri ve görselleri analiz etmekle kalmaz; klavyede zorla
 
 ## Canlı Demo
 Yayın Linki: https://dijital-dost.vercel.app/
+
 Demo Video: https://www.loom.com/share/2c9051a8b6c445b4a9caeb7e41fdb07b
 
 ## Kullanılan Teknolojiler
