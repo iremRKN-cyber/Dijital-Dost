@@ -4,7 +4,7 @@
 Dijitalleşme hızlanırken, internet okuryazarlığı düşük olan yaşlılar ve çocuklar siber dolandırıcılara ve zorbalara karşı en açık hedef haline gelmektedir. Karmaşık siber güvenlik araçları bu kitleler için anlaşılmaz olduğundan, onları anlayan ve tehlikelere karşı anında uyaran erişilebilir, şefkatli bir koruma kalkanına ihtiyaç vardır.
 
 ## Çözüm
-Dijital Dost, şüpheli SMS'leri, e-postaları veya oyun içi mesajları saniyeler içinde analiz eden yapay zeka destekli bir siber güvenlik asistanıdır. Gücünü **Google Gemini 2.5 Flash**'tan alarak, hedef kitleye özel modlarla (Büyükler ve Çocuklar) şefkatli, basit ve net uyarılar üretir. 
+Dijital Dost, şüpheli SMS'leri, e-postaları veya oyun içi mesajları saniyeler içinde analiz eden yapay zeka destekli bir siber güvenlik asistanıdır. Gücünü Google Gemini 2.5 Flash'tan alarak, hedef kitleye özel modlarla (Büyükler ve Çocuklar) şefkatli, basit ve net uyarılar üretir. 
 
 Yapay zeka sadece metinleri ve görselleri analiz etmekle kalmaz; klavyede zorlananlar için "Sesle Yazma" asistanını yönlendirir, tehlike anında "Aileme Haber Ver" özelliğiyle kriz müdahalesi yapar ve canlı eğitim/radar modülleriyle dijital farkındalık yaratır. API yoğunluklarında bile sistemin çökmesini engelleyen özel bir "Fallback (B Planı)" mimarisine sahiptir.
 
@@ -24,7 +24,7 @@ Projeyi yerel ortamınızda (localhost) çalıştırmak için aşağıdaki adım
 
 1. Repoyu bilgisayarınıza klonlayın:
    ```bash
-   git clone [GitHub-Repo-Linkini-Buraya-Yapistir]
+   git clone https://github.com/iremRKN-cyber/Dijital-Dost
 
 ---
 
