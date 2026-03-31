@@ -1,8 +1,30 @@
 # Dijital Dost: Siber Savunma Kalkanı 🛡️
 
-🔗 **Canlı Sitemiz:** https://dijital-dost.vercel.app/
+## Problem
+Dijitalleşme hızlanırken, internet okuryazarlığı düşük olan yaşlılar ve çocuklar siber dolandırıcılara ve zorbalara karşı en açık hedef haline gelmektedir. Karmaşık siber güvenlik araçları bu kitleler için anlaşılmaz olduğundan, onları anlayan ve tehlikelere karşı anında uyaran erişilebilir, şefkatli bir koruma kalkanına ihtiyaç vardır.
 
-📹 **Demo Videosu:** https://www.loom.com/share/2c9051a8b6c445b4a9caeb7e41fdb07b
+## Çözüm
+Dijital Dost, şüpheli SMS'leri, e-postaları veya oyun içi mesajları saniyeler içinde analiz eden yapay zeka destekli bir siber güvenlik asistanıdır. Gücünü **Google Gemini 2.5 Flash**'tan alarak, hedef kitleye özel modlarla (Büyükler ve Çocuklar) şefkatli, basit ve net uyarılar üretir. 
+
+Yapay zeka sadece metinleri ve görselleri analiz etmekle kalmaz; klavyede zorlananlar için "Sesle Yazma" asistanını yönlendirir, tehlike anında "Aileme Haber Ver" özelliğiyle kriz müdahalesi yapar ve canlı eğitim/radar modülleriyle dijital farkındalık yaratır. API yoğunluklarında bile sistemin çökmesini engelleyen özel bir "Fallback (B Planı)" mimarisine sahiptir.
+
+## Canlı Demo
+Yayın Linki: https://dijital-dost.vercel.app/
+Demo Video: https://www.loom.com/share/2c9051a8b6c445b4a9caeb7e41fdb07b
+
+## Kullanılan Teknolojiler
+- React.js
+- Tailwind CSS
+- Google Gemini 2.5 Flash API
+- Web Speech API (Sesle Yazma Entegrasyonu)
+- Vite & Vercel (Dağıtım)
+
+## Nasıl Çalıştırılır?
+Projeyi yerel ortamınızda (localhost) çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+
+1. Repoyu bilgisayarınıza klonlayın:
+   ```bash
+   git clone [GitHub-Repo-Linkini-Buraya-Yapistir]
 
 ---
 
