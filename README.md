@@ -20,4 +20,5 @@ React ve Tailwind CSS ile modern bir arayüzde hayat bulan bu proje, sadece bir 
 
 ![Dijital-Dost](https://github.com/user-attachments/assets/97751864-ea09-4d03-9bd8-fc19912fdff4)
 <img width="2559" height="1357" alt="Ekran görüntüsü 2026-03-29 234426" src="https://github.com/user-attachments/assets/9cfbc9fa-fdad-455e-9c4f-311f31532041" />
-<img width="1244" height="1014" alt="Ekran görüntüsü 2026-03-31 193653" src="https://github.com/user-attachments/assets/548da2a8-2206-4850-b2ba-6a4f0137b272" />
+<img width="1244" height="1014" alt="Ekran görüntüsü 2026-03-31 193653" src="https://github.com/user-attachments/assets/548da2a8-2206-4850-b2ba-6a4f0137b272" /> 
+<img width="2558" height="1365" alt="Ekran görüntüsü 2026-03-29 234728" src="https://github.com/user-attachments/assets/522b888a-904e-447e-ab40-a6f69ba57781" />
