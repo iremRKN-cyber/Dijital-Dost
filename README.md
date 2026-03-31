@@ -25,6 +25,18 @@ Projeyi yerel ortamınızda (localhost) çalıştırmak için aşağıdaki adım
 1. Repoyu bilgisayarınıza klonlayın:
    ```bash
    git clone https://github.com/iremRKN-cyber/Dijital-Dost
+2. Proje dizinine gidin:
+   ```bash
+   cd dijital-dost
+3. Gerekli bağımlılıkları yükleyin:
+   ```bash
+     npm install
+4. Projenin ana dizininde bir .env dosyası oluşturun ve içine kendi Gemini API anahtarınızı ekleyin:
+    ```bash
+    VITE_GEMINI_API_KEY=sizin_api_anahtariniz_buraya
+5. Projeyi başlatın:
+    ```bash
+   npm run dev
 
 ---
 
