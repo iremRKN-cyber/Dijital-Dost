@@ -1,25 +1,23 @@
-# Dijital Dost
+# Dijital Dost: Siber Savunma Kalkanı 🛡️
 
-## Problem
-Günümüzde siber dolandırıcılık, oltalama (phishing) saldırıları ve siber zorbalık vakaları hızla artmaktadır. Karmaşık siber güvenlik araçları, internet okuryazarlığı düşük olan yaşlı bireyler ve dijital tehlikelere karşı savunmasız olan çocuklar için anlaşılamaz durumdadır. Bu iki riskli grubun anlık olarak kullanabileceği, basit, anlaşılır ve şefkatli bir dijital koruma kalkanına acil ihtiyaç vardır.
+🔗 **Canlı Sitemiz:** https://dijital-dost.vercel.app/
 
-## Çözüm
-Dijital Dost, şüpheli mesajları, linkleri ve ekran görüntülerini anında analiz eden bir siber güvenlik asistanıdır. Projenin merkezindeki Google Gemini 2.5 Flash yapay zekası, karmaşık siber tehditleri (metin ve OCR ile görsel olarak) saniyeler içinde algılar. AI, kullanıcının profiline (büyükler veya çocuklar) göre persona değiştirerek özel, anlaşılır ve korumacı bir dille uyarılar üretir. Ayrıca YZ destekli eğitim modülüyle dinamik senaryolar yaratarak kullanıcıların siber farkındalığını interaktif bir şekilde artırır.
+📹 **Demo Videosu:** https://www.loom.com/share/2c9051a8b6c445b4a9caeb7e41fdb07b
 
-## Canlı Demo
-Yayın Linki: https://dijital-dost.vercel.app
+---
 
-Demo Video: https://www.loom.com/share/2c9051a8b6c445b4a9caeb7e41fdb07b
+## 📖 Projenin Hikayesi: Neden Dijital Dost?
 
-## Kullanılan Teknolojiler
-- React.js & Vite
-- Tailwind CSS
-- Google Gemini 2.5 Flash API
-- Vercel (Deployment)
+Dijital dünyada sınırlar her geçen gün genişlerken, bu hızın gerisinde kalan yaşlılar ve çocuklar siber zorbaların ve dolandırıcıların en açık hedefi haline geliyor. Fırat Üniversitesi Adli Bilişim Mühendisliği öğrencisi ve geleceğin bir Blue Team (Mavi Takım) uzmanı olarak, bu eşitsizliği ortadan kaldırmak için **'Dijital Dost'**u geliştirdim.
 
-## Nasıl Çalıştırılır?
-Projeyi kendi bilgisayarınızda çalıştırmak için:
+Dijital Dost, internet okuryazarlığı düşük olan kitleleri karmaşık güvenlik terimleriyle yormadan koruyan, yapay zeka destekli şefkatli bir siber kalkandır. Gücünü Google Gemini 2.5 Flash'ın gelişmiş analiz yeteneğinden alan sistem; şüpheli SMS'leri, sahte e-postaları veya oyun içi mesajları saniyeler içinde inceler. Klavyede zorlanan büyüklerimiz için 'Sesle Yazma' özelliği, tehlike anında çocuklar için anında devreye giren 'Aileme Haber Ver' butonu ve YZ API'si yorulduğunda bile sistemin çökmesini engelleyen özel 'Fallback (B Planı)' mimarisi ile kesintisiz bir koruma sağlar.
 
-1. Repoyu klonlayın:
-```bash
-git clone [https://github.com/iremRKN-cyber/Dijital-Dost.git](https://github.com/iremRKN-cyber/Dijital-Dost.git)
+React ve Tailwind CSS ile modern bir arayüzde hayat bulan bu proje, sadece bir güvenlik aracı değil, aynı zamanda canlı tehdit radarıyla bir dijital farkındalık platformudur. Teknolojiyi sadece anlayan değil, onu savunmasızları koruyan bir kalkan olarak kullanan bir mühendis olma vizyonumun ilk büyük adımı olan Dijital Dost'u gururla sunuyorum.
+
+---
+
+## 📸 Ekran Görüntüleri
+
+![Dijital-Dost](https://github.com/user-attachments/assets/97751864-ea09-4d03-9bd8-fc19912fdff4)
+<img width="2559" height="1357" alt="Ekran görüntüsü 2026-03-29 234426" src="https://github.com/user-attachments/assets/9cfbc9fa-fdad-455e-9c4f-311f31532041" />
+<img width="1244" height="1014" alt="Ekran görüntüsü 2026-03-31 193653" src="https://github.com/user-attachments/assets/548da2a8-2206-4850-b2ba-6a4f0137b272" />
